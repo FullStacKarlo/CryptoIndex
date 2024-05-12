@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+    <title>Precios de Criptomonedas</title>
+</head>
+<body>
+    <h1>ÍNDICE CRIPTO</h1>
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Precio en USD</th>
+            <th>Precio en EUR</th>
+        </tr>
+        {% for crypto in top_cryptos %}
+        <tr>
+            <td>{{ crypto['name'] }}</td>
+            <td>{{ prices_usd[crypto['id']]['usd'] }}</td>
+            <td>{{ prices_eur[crypto['id']]['eur'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
