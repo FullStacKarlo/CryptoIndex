@@ -1,0 +1,110 @@
+/* styles/style.css */
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0d1217; /* Fondo negro */
+    color: #ffd700; /* Texto dorado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    width: 100%;
+    background-color: #0d1217; /* Fondo negro */
+    padding: 10px 0;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffd700; /* Texto dorado */
+  }
+  
+  .header-logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    padding-left: 20px;
+  }
+  
+  .header-logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .header-logo p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffd700; /* Texto dorado */
+  }
+  
+  table {
+    width: 80%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #333; /* Fondo gris oscuro para contraste */
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #000; /* Fondo negro */
+    color: #ffd700; /* Texto dorado */
+  }
+  
+  td {
+    border-bottom: 1px solid #555; /* Borde gris oscuro */
+    color: #ffffff; /* Texto blanco */
+  }
+  
+  tr:hover {
+    background-color: #444; /* Cambio de color de fondo al pasar el cursor */
+    transition: background-color 0.3s ease;
+  }
+  
+  footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0d1217; /* Fondo negro */
+    color: #ffd700; /* Texto dorado */
+    position: fixed;
+    bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+    table {
+      width: 100%;
+    }
+  
+    .header-logo {
+      padding-left: 10px;
+    }
+  
+    .header-logo p {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    th, td {
+      padding: 8px;
+    }
+  
+    .header-logo img {
+      height: 30px;
+    }
+  
+    .header-logo p {
+      font-size: 1rem;
+    }
+  }
